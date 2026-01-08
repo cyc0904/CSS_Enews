@@ -1,0 +1,180 @@
+
+/* Epaper Background */
+.enews-shell {
+    max-width: 870px;
+    margin: 24px auto;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+
+/* Header */
+.enews-header {
+    padding: 28px 28px 16px;
+    text-align: center;
+}
+
+.enews-header a {
+    display: flex;            
+    align-items: center; 
+    gap: 12px;              
+}
+
+/* Headre Logo */
+.brand-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px 12px;
+    font-size: 14px;
+    color: #111827;
+}
+
+/* Header Title */
+.enews-title {
+    margin: 0;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+}
+
+
+/* Body */
+.enews-body {
+    padding: 0 28px 18px;
+}
+
+/* The Lastest enews */
+.news-item {
+    padding: 18px 0;
+    border-top: 1px solid #f1f5f9;
+}
+
+.news-item:first-child {
+    border-top: 0;
+    padding-top: 0;
+}
+
+.banner-img {
+    border-radius: 10px;
+    overflow: hidden;
+    background: #f8fafc;
+    border: 1px solid #eef2f7;
+}
+
+.banner-img img {
+    height: 300px;
+    object-fit: cover;
+    display: block;
+}
+
+.news-title2 {
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 1.25;
+    color: #111827;
+}
+
+/* Read More Button */
+.read-more {
+    display: block;
+    text-align: right;
+    margin-top: 10px;
+
+    font-weight: 700;
+    color: #FFC500;
+    text-decoration: none;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+/* Issue */
+.journal {
+    border-radius: 10px;
+    padding: 2px 10px 20px 15px;
+    border: #f1f5f9 solid 2px;
+    margin-bottom: 10px;
+}
+
+.news-section {
+    padding: 18px 0 6px;
+
+}
+
+/* Year */
+.section-title {
+    font-size: 25px;
+    font-weight: 900;
+    margin: 0;
+    color: #111827;
+    position: relative;
+    padding-left: 14px;
+}
+
+.section-title::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 4px;           
+    height: 90%;        
+    background-color: #FFC500; 
+    border-radius: 2px;
+}
+
+/* journal */
+.issue-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 14px 20px;
+    margin-top: 16px;
+}
+
+.issue-item {
+    line-height: 1.4;
+}
+
+.issue-item a {
+    font-weight: 700;
+    color: #004996;
+    text-decoration: none;
+}
+
+.issue-item a:hover {
+    text-decoration: underline;
+}
+
+.issue-item span {
+    display: block;
+    font-size: 14px;
+    color: #6b7280;
+    margin-top: 2px;
+}
+
+
+/* Footer */
+.enews-footer {
+    padding: 14px 28px 22px;
+    border-top: 1px solid #f1f5f9;
+
+    color: #6b7280;
+    font-size: 15px;
+    text-align: center;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 576px) {
+
+    .enews-header,
+    .enews-body {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .news-img img {
+        height: 220px;
+    }
+}
