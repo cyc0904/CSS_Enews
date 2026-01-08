@@ -1,9 +1,9 @@
-/* ===== Page background ===== */
+/* Page Background */
 body {
     background: #f3f4f6;
 }
 
-/* ===== Main centered "newsletter" shell ===== */
+/* Epaper Background */
 .enews-shell {
     max-width: 720px;
     margin: 24px auto;
@@ -16,33 +16,23 @@ body {
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
 }
 
-/* ===== Header ===== */
+/* Header */
 .enews-header {
     padding: 28px 28px 16px;
     text-align: center;
 }
 
+/* Headre Logo */
 .brand-badge {
     display: inline-flex;
     align-items: center;
     gap: 10px;
-
     padding: 6px 12px;
-    /*border: 1px solid #e5e7eb;
-    border-radius: 999px;*/
-
     font-size: 14px;
     color: #111827;
 }
 
-.brand-dot {
-    width: 22px;
-    height: 22px;
-    border-radius: 6px;
-    background: #ff6a00;
-    display: inline-block;
-}
-
+/* Header Title */
 .enews-title {
     margin-top: 12px;
     font-weight: 800;
@@ -51,15 +41,17 @@ body {
 
 .enews-sub {
     margin-top: 6px;
-    font-size: 13px;
-    color: #6b7280;
+    font-size: 20px;
+    color: black;
 }
 
-/* ===== Body ===== */
+
+/* Body */
 .enews-body {
     padding: 0 28px 18px;
 }
 
+/* Article */
 .news-item {
     padding: 18px 0;
     border-top: 1px solid #f1f5f9;
@@ -70,6 +62,7 @@ body {
     padding-top: 0;
 }
 
+/* Banner/Activity Image */
 .banner-img {
     border-radius: 10px;
     overflow: hidden;
@@ -78,12 +71,12 @@ body {
 }
 
 .banner-img img {
-    /* 讓圖更一致、更像電子報：固定高度 + 裁切 */
     height: 300px;
     object-fit: cover;
     display: block;
 }
 
+/* Article Image */
 .news-img {
     width: 100%;
     aspect-ratio: 3 / 2;
@@ -94,7 +87,6 @@ body {
     border: 1px solid #eef2f7;
 
     display: flex;
-    /* 用來置中圖片 */
     align-items: center;
     justify-content: center;
 }
@@ -103,37 +95,28 @@ body {
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
-    /* 關鍵：不裁切 */
     display: block;
 }
 
-
-.news-meta {
-    font-size: 12px;
-    color: #6b7280;
-    margin-top: 10px;
-}
-
+/* Article Tilte */
 .news-title2 {
-    /* margin-top: 6px;*/
     font-size: 20px;
     font-weight: 800;
     line-height: 1.25;
     color: #111827;
 }
 
+/* Article Description */
 .news-desc {
     margin-top: 10px;
     color: #374151;
     line-height: 1.7;
 }
 
-/* "Read more" link like screenshot */
+/* Article Read More Button */
 .read-more {
     display: block;
-    /* 讓它佔滿一行 */
     text-align: right;
-    /* 文字靠右 */
     margin-top: 10px;
 
     font-weight: 700;
@@ -145,30 +128,31 @@ body {
     text-decoration: underline;
 }
 
-/* ===== Section title (e.g., 新進教師專欄) ===== */
+/* Section */
 .news-section {
     padding: 18px 0 6px;
     border-top: 1px solid #f1f5f9;
 }
 
+/* Section Title */
 .section-title {
-    font-size: 18px;
+    font-size: 25px;
     font-weight: 900;
     margin: 0;
     color: #111827;
 }
 
-/* ===== Footer ===== */
+/* Footer */
 .enews-footer {
     padding: 14px 28px 22px;
     border-top: 1px solid #f1f5f9;
 
     color: #6b7280;
-    font-size: 12px;
+    font-size: 15px;
     text-align: center;
 }
 
-/* ===== Responsive adjustments ===== */
+/* Responsive Adjustments */
 @media (max-width: 576px) {
 
     .enews-header,
